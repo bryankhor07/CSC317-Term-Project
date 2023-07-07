@@ -1,0 +1,39 @@
+<main>
+    <img src="/public/images/RegistrationIcon.png" alt="Registration Icon">
+    <form onsubmit="return validate();" method="POST" action="/users/registration" enctype="application/x-www-form-urlencoded">
+        <h2 style="background-color: #efe5d0;">Registration Form</h2>
+        <label for="Username">Username</label>
+        <br>
+        <input id="username" type="text" name="username" placeholder="Username">
+        <br>
+
+        <label for="Email">Email</label>
+        <br>
+        <input type="email" name="Email" placeholder="Email">
+        <br>
+
+        <label for="Password">Password</label>
+        <br>
+        <input id="password" type="password" name="password" placeholder="Password">
+        <br>
+
+        <label for="Confirm Password">Confirm password</label>
+        <br>
+        <input id="cpassword" type="password" name="Confirm Password" placeholder="Confirm Password">
+        <br>
+
+        <label for="Acceptance">I am 13+ years of age</label>
+        <input type="checkbox" name="Acceptance" required>
+        <br>
+        <br>
+        <a href="">TOS and Privacy Rules</a>
+        <br>
+
+        <br>
+        <label for="Privacy rules">I have read and I accept the TOS and Privacy Rules</label>
+        <input type="checkbox" name="Privacy rules" required>
+        <br>
+
+        <button id="submit" type="submit" value="Register">Register</button>
+    </form>
+</main>

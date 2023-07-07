@@ -1,0 +1,19 @@
+<nav>
+    <ul>
+        <li><a href="/" title="Index page">Home</a></li>
+        <li>
+            <form class="search-bar" method="get" action="/posts/search" enctype="application/x-www-form-urlencoded">
+                <input class="search-text" name="searchTerm" type="text" placeholder="What are you looking for?" value="{{searchValue}}">
+                <button type="submit" class="search-button">Search</button>
+            </form>
+        </li>
+        {{#if isLoggedIn}}
+        <li><a  id="logout-button">Log Out</a></li>
+        {{else}}
+        <li><a href="/login">Log In</a> </li>
+        {{/if}}
+        <li><a href="/registration" title="Registration page">Registration</a></li>
+        <li><a href="/postimage" title="Post your image">Post Image</a></li>
+        <li><a href="/viewpost"></a></li>
+    </ul>
+</nav>

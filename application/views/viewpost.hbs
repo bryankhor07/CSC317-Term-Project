@@ -1,0 +1,29 @@
+<main class="viewpost-text">
+    <section>
+        <h1 class="viewpost-info">{{currentPost.title}}</h1>
+    </section>
+    <section>
+        <h3 class="viewpost-description">{{currentPost.description}}</h3>
+    </section>
+    <section>
+        <h3 class="viewpost-info">{{currentPost.username}}</h3>
+    </section>
+    <section>
+        <h3 class="viewpost-info">{{formatDate currentPost.createdAt}}</h3>
+    </section>
+    <section>
+        <img id="user-image" src="/{{currentPost.image}}" alt="fake image">
+    </section>
+    <div class="comment-section">
+        <div class="comment-box">
+            <textarea id="comment-text" placeholder="Write a comment"></textarea>
+            <i id="comment-button" data-postid="{{currentPost.id}}">Add Comment</i>
+        </div>
+        <br>
+        <div id="comment-list" class="comments">
+            {{#each currentPost.comments}}
+                {{> comment this}}
+            {{/each}}
+        </div>
+    </div>
+</main>

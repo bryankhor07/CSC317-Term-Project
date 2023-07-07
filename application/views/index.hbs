@@ -1,0 +1,10 @@
+<main class="product-list">
+    {{#each results}}
+    <div>
+        <img class="thumbnail" src="/{{this.thumbnail}}" alt="Image not found">
+        <p>{{this.title}}</p>
+        <p class="viewpost-description">{{this.description}}</p>
+        <a href="/posts/{{this.id}}">Details</a>
+    </div>
+    {{/each}}
+</main>

@@ -1,0 +1,268 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #675c47;
+  padding: 15px 0px 0px 0px;
+  color: #efe5d0;
+  border-radius: 11px;
+}
+
+h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 35px;
+  display: inline-block;
+  border-bottom: 3px solid;
+}
+
+body {
+  background-color: #b5a789;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  background-color: #675c47;
+  margin: 10px 0px 10px 0px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 10px 0px 10px 0px;
+  border-radius: 11px;
+}
+
+ul {
+  margin: 0px;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+li a {
+  display: block;
+  color: #efe5d0;
+  font-weight: bold;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+main {
+  background-image: url(../images/body-background-image.png);
+  background-size: 300px 100px;
+  padding: 40px 0px 40px 0px;
+  margin-bottom: 10px;
+  background-color: #efe5d0;
+  color: #954b4b;
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border-radius: 11px;
+}
+
+footer {
+  background-color: #675c47;
+  color: #efe5d0;
+  text-align: center;
+  padding: 40px 0px 0px 0px;
+  font-size: 90%;
+  border-radius: 11px;
+}
+
+form {
+  margin: auto;
+  margin-top: 30px;
+  display: table;
+  padding: 10px;
+  border: thin dotted #7e7e7e;
+  background-color: #e1ceb8;
+  border-radius: 11px;
+}
+
+input:hover {
+  background-color: aqua;
+}
+
+input:active {
+  background-color: rgb(39, 131, 131);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: aqua;
+}
+
+button:active {
+  background-color: rgb(39, 131, 131);
+}
+
+#submit {
+  margin: 10px 0px 10px 0px;
+  color: #954b4b;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+#submit:hover {
+  transform: scale(1.1);
+}
+
+.search-bar {
+  background-color: #675c47;
+  overflow: auto;
+  padding: 0px;
+  border: none;
+  margin-top: 6px;
+  font-size: 17px;
+}
+
+.search-text {
+  padding-bottom: 2px;
+  border: 1px solid grey;
+  height: 30px;
+  text-align: center;
+}
+
+.search-button {
+  background-color: #0b7dda;
+  cursor: pointer;
+  border: 1px solid grey;
+  height: 30px;
+  width: 100px;
+  padding-top: 2px;
+  padding-bottom: 3px;
+}
+
+.right-arrow {
+  float: left;
+  height: 100px;
+  width: 400px;
+  padding-bottom: 14px;
+  animation: sliderx-left 3s ease-in 1;
+}
+
+.left-arrow {
+  float: right;
+  height: 100px;
+  width: 400px;
+  padding-bottom: 14px;
+  animation: sliderx-right 3s ease-in 1;
+}
+
+.right-arrow-footer {
+  float: left;
+  height: 100px;
+  width: 400px;
+  margin-top: -25px;
+  padding-bottom: 13px;
+  animation: sliderx-left 3s ease-in 1;
+}
+
+.left-arrow-footer {
+  float: right;
+  height: 100px;
+  width: 400px;
+  margin-top: -25px;
+  padding-bottom: 13px;
+  animation: sliderx-right 3s ease-in 1;
+}
+
+.thumbnail {
+  height: 150px;
+  width: 150px;
+}
+
+.viewpost-description {
+  text-size-adjust: auto;
+}
+
+#user-image {
+  height: 300px;
+  width: 300px;
+}
+
+.viewpost-text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#logout-button {
+  cursor: pointer;
+}
+
+.comment::before {
+  content: "\a";
+  white-space: pre;
+}
+
+.comment-author::before {
+  content: "@";
+}
+
+.comment-text::before {
+  content: "\a";
+  white-space: pre;
+}
+
+.comment-text::after {
+  content: "\a";
+  white-space: pre;
+}
+
+.comment-box {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#comment-text {
+  height: 40px;
+}
+
+#comment-button {
+  background-color: #0b7dda;
+  color: #111;
+  padding-top: 10px;
+  margin-top: 0px;
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  height: 40px;
+  cursor: pointer;
+}
+
+#comment-button:hover {
+  background-color: aqua;
+}
+
+
+::placeholder {
+  text-align: center;
+}
+
+.product-list {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: auto;
+  gap: 20px;
+  padding: 1rem;
+}
+
+@keyframes sliderx-left {
+  0% {
+    transform: translateX(-600px);
+  }
+}
+
+@keyframes sliderx-right {
+  0% {
+    transform: translateX(600px);
+  }
+}
